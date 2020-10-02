@@ -1,0 +1,114 @@
+/* !classi condivise  */
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.huge {
+  width: 100vw;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.v-center {
+  vertical-align: middle;
+}
+
+.mid-transform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.relative {
+  position: relative;
+}
+
+.more-width {
+  max-width: 1400px;
+}
+
+/* !classi normali */
+
+.container.more-width {
+  height: 80px;
+}
+
+.container.more-width *[class*="col-"] {
+  height: 100%;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.container.more-width .logo {
+  height: 20%;
+}
+
+nav .col-lg-10 ul > li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav .col-lg-10 ul {
+  float: right;
+}
+
+nav .col-lg-10 ul li:nth-last-child(2) a,
+nav .col-lg-10 ul li:nth-last-child(3) a {
+  border-right: 1px solid black;
+  padding-right: 30px;
+}
+
+#huge {
+  color: white;
+  width: 100vw;
+  height: 800px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+
+#huge .container {
+  height: 800px;
+}
+
+#huge img {
+  height: 70px;
+}
+
+#huge .container h1 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+#huge .col-lg-10.col-lg-offset-1 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* !debug */
+
+.debug {
+  border: 1px solid black;
+}
