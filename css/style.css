@@ -61,6 +61,7 @@ a:hover {
 
 .container.more-width .logo {
   height: 20%;
+  margin-left: 20px;
 }
 
 nav .col-lg-10 ul > li {
@@ -95,7 +96,9 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 #huge img {
   height: 70px;
 }
-
+.hidden {
+  display: none;
+}
 #huge .container h1 {
   font-weight: 500;
   font-size: 4rem;
@@ -107,6 +110,30 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   font-weight: 600;
 }
 
+/* !media query  */
+@media screen and (max-width: 1120px) {
+  .d-none {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+
+    width: 100%;
+  }
+
+  .hidden img {
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  #forced-80 {
+    height: 80px;
+  }
+}
 /* !debug */
 
 .debug {

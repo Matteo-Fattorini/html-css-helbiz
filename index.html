@@ -17,15 +17,24 @@
       <div class="container more-width">
         <!-- logo  -->
 
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2 col-xs-2">
           <img class="logo" src="img/logo.svg" alt="logo" />
         </div>
 
         <nav>
           <!-- nav principale  -->
+          <!-- !hidden toglie il display in modalita desktop -->
 
-          <div class="col-lg-10">
-            <ul>
+          <!-- !d-none toglie il display in modalità 1120px -->
+
+          <div class="col-lg-10 col-md-10 col-xs-10">
+            <div
+              id="forced-80"
+              class="col-lg-10 col-md-10 hidden relative col-xs-10"
+            >
+              <img class="" src="img/menu.svg" alt="" />
+            </div>
+            <ul class="d-none">
               <li><a href="">HELBIZGO</a></li>
               <li><a href="">HELBIZCAR</a></li>
               <li><a href="">HELBIZAIR</a></li>
@@ -45,13 +54,14 @@
         <div class="container relative">
           <div class="col-lg-9 mid-transform t-center">
             <div class="col 12"><h1>Shared Mobility of Tomorrow</h1></div>
-          <div class="col-lg-10 col-lg-offset-1">
-            Bringing the future of shared mobility to the streets of the world
-          </div>
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="col-lg-10 col-lg-offset-1"> 
-              <img src="img/appstore.svg" alt="">  
-              <img src="img/googleplay.svg" alt="">
+            <div class="col-lg-10 col-lg-offset-1">
+              Bringing the future of shared mobility to the streets of the world
+            </div>
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-lg-10 col-lg-offset-1">
+                <img src="img/appstore.svg" alt="" />
+                <img src="img/googleplay.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
