@@ -140,7 +140,6 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   background-image: url("../img/hero-2.jpg");
   background-size: cover;
   height: 700px;
-  text-align: center;
 }
 
 .background-wallpaper img {
@@ -154,12 +153,12 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 }
 
 .more-width-1600.container.third > div:first-child {
-  margin-top: -100px;
+  margin-top: -150px;
   font-size: 2em;
   font-weight: 600;
 }
 .more-width-1600.container.third > div:last-child {
-  margin-top: -100px;
+  margin-top: -150px;
   font-size: 1em;
   font-weight: 400;
 }
@@ -171,22 +170,23 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   height: 550px;
   color: white;
   background-size: cover;
+  background-position: center;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
 }
 
-.more-width-1600.container.fourth .container h1 {
+.more-width-1600.container.fourth h1 {
   color: white;
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.more-width-1600.container.fourth .container p {
+.more-width-1600.container.fourth p {
   margin-bottom: 20px;
 }
 
-.more-width-1600.container.fourth .container > div {
+#center {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -235,6 +235,10 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
     line-height: 60px;
     padding-top: 30px;
     margin: 0;
+  }
+
+  .background-wallpaper {
+    text-align: center;
   }
 }
 /* !debug */
