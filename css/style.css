@@ -17,6 +17,7 @@ a:hover {
 .huge {
   width: 100vw;
 }
+
 .f-left {
   float: left;
 }
@@ -54,17 +55,17 @@ a:hover {
 
 /* header  */
 
-.container.more-width-1400 {
+.container.more-width-1400.first {
   height: 80px;
 }
 
-.container.more-width-1400 *[class*="col-"] {
+.container.more-width-1400.first *[class*="col-"] {
   height: 100%;
   line-height: 80px;
   vertical-align: middle;
 }
 
-.container.more-width-1400 .logo {
+.container.more-width-1400.first .logo {
   height: 20%;
   margin-left: 20px;
 }
@@ -132,6 +133,69 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   color: blue;
 }
 
+/* seconda sezione  */
+
+.background-wallpaper {
+  width: 100vw;
+  background-image: url("../img/hero-2.jpg");
+  background-size: cover;
+  height: 700px;
+  text-align: center;
+}
+
+.background-wallpaper img {
+  height: 600px;
+  margin-top: 300px;
+}
+
+/* terza sezione  */
+.more-width-1600.container.third {
+  margin-bottom: 100px;
+}
+
+.more-width-1600.container.third > div:first-child {
+  margin-top: -100px;
+  font-size: 2em;
+  font-weight: 600;
+}
+.more-width-1600.container.third > div:last-child {
+  margin-top: -100px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* quarta sezione  */
+
+.more-width-1600.container.fourth > div:first-child {
+  background-image: url("../img/hero-3.jpg");
+  height: 550px;
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+
+.more-width-1600.container.fourth .container h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.more-width-1600.container.fourth .container p {
+  margin-bottom: 20px;
+}
+
+.more-width-1600.container.fourth .container > div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.more-width-1600.container.fourth .col-lg-4 img {
+  width: 300px;
+}
+
 /* !media query  */
 @media screen and (max-width: 1120px) {
   .d-none {
@@ -152,8 +216,25 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
     transform: translate(0, -50%);
   }
 
+  #fix-one,
+  #fix-two {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+    display: block;
+    font-size: 3em;
+  }
+
   #forced-80 {
     height: 80px;
+  }
+
+  .more-width-1600.container .col-lg-5 {
+    background-color: #fafafa;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 30px;
+    margin: 0;
   }
 }
 /* !debug */
