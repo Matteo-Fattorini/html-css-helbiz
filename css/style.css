@@ -168,6 +168,7 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 .more-width-1600.container.fourth > div:first-child {
   background-image: url("../img/hero-3.jpg");
   height: 550px;
+  width: 100%;
   color: white;
   background-size: cover;
   background-position: center;
@@ -189,7 +190,8 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 #center {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .more-width-1600.container.fourth .col-lg-4 img {
@@ -225,10 +227,53 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   margin-right: 80px;
 }
 
+/* quinta sezione  */
+
+#huge-5-page {
+  color: black;
+  width: 100vw;
+  height: 600px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+#huge-5-page [class*="col-"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+#huge-5-page .col-lg-4 div > i {
+  margin-right: 30px;
+}
+
+#huge-5-page .col-lg-4 div {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 /* !media query  */
+
 @media screen and (max-width: 1120px) {
   .d-none {
     display: none;
+  }
+
+  #media-fix-1,
+  #media-fix-2 {
+    width: 100%;
+  }
+
+  .col-lg-6.col-md-12.col-xs-12.media-fix {
+    width: 100%;
   }
 
   .hidden {
@@ -258,7 +303,7 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
     height: 80px;
   }
 
-  .more-width-1600.container .col-lg-5 {
+  .more-width-1600.container.first .col-lg-5 {
     background-color: #fafafa;
     text-align: center;
     line-height: 60px;
@@ -270,6 +315,7 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
     text-align: center;
   }
 }
+
 /* !debug */
 
 .debug {
