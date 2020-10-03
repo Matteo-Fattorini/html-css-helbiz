@@ -239,6 +239,7 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
   background-blend-mode: multiply;
   font-weight: 200;
   font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 
 #huge-5-page [class*="col-"] {
@@ -258,6 +259,46 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 #huge-5-page .col-lg-4 div {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+/* footer  */
+
+footer {
+  width: 100vw;
+  background-color: black;
+  padding-top: 100px;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+footer li:not(:first-child) {
+  color: grey;
+}
+
+footer .logo {
+  width: 150px;
+  margin-left: 50px;
+}
+
+footer .container.middle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 150px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  line-height: 150px;
+}
+
+footer .mini-logo {
+  margin-right: 20px;
+}
+
+footer .container:last-child img {
+  width: 40%;
 }
 
 /* !media query  */
@@ -313,6 +354,12 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 
   .background-wallpaper {
     text-align: center;
+  }
+
+  footer .logo {
+    width: 150px;
+    margin-left: 50px;
+    margin-bottom: 50px;
   }
 }
 
