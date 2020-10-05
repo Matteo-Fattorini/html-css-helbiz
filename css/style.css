@@ -166,13 +166,13 @@ nav .col-lg-10 ul li:nth-last-child(3) a {
 /* quarta sezione  */
 
 .more-width-1600.container.fourth > div:first-child {
-  background-image: url("../img/hero-3.jpg");
+  background-image: url("../img/scooter.jpg");
   height: 550px;
   width: 100%;
   color: white;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
 }
 
